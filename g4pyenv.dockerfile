@@ -86,7 +86,5 @@ RUN make install
 
 #Setup the environment
 WORKDIR /opt
-RUN bin/bash/ -c "source ${GEANT4_INSTALL}/bin/geant4.sh"
 ENV PYTHONPATH="${GEANT4_DIR}/geant4.10.05.p01/environments/g4py/lib64/"
 ENV LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:"${XERCESC_DIR}/lib"
-RUN bin/bash/ -c "source ${ROOTSYS}/bin/thisroot.sh"
